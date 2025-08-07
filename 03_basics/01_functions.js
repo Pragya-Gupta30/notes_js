@@ -1,4 +1,3 @@
-
 function sayMyName(){
     console.log("H");
     console.log("I");
@@ -15,20 +14,20 @@ function sayMyName(){
 //     console.log(number1 + number2);
 // }
 
-function addTwoNumbers(number1, number2){
+function addTwoNumbers(number1, number2){ //parameters
 
     // let result = number1 + number2
     // return result
     return number1 + number2
 }
 
-const result = addTwoNumbers(3, 5)
+const result = addTwoNumbers(3, 5) //arguments
 
 // console.log("Result: ", result);
 
 
-function loginUserMessage(username = "sam"){
-    if(!username){
+function loginUserMessage(username = "sam"){ //ek value pahle se de di default type
+    if(!username){ //undefined false hota hai toh uska ulta true liya hai
         console.log("PLease enter a username");
         return
     }
@@ -39,15 +38,18 @@ function loginUserMessage(username = "sam"){
 // console.log(loginUserMessage("hitesh"))
 
 
-function calculateCartPrice(val1, val2, ...num1){
+function calculateCartPrice(val1, val2, ...num1){ //rest operator hai ... yeh
+    //multiple values dene ke kaam aata hai
+    //ye values ka array bana deta hai
+    //baki val1,val2 apni values lenge and uske baad sara array mein aayega
     return num1
 }
 
-// console.log(calculateCartPrice(200, 400, 500, 2000))
+ console.log(calculateCartPrice(200, 400, 500, 2000))
 
 const user = {
     username: "hitesh",
-    prices: 199
+    price: 199
 }
 
 function handleObject(anyobject){
@@ -58,7 +60,7 @@ function handleObject(anyobject){
 handleObject({
     username: "sam",
     price: 399
-})
+}) //direct function mein object ko pass kar diya
 
 const myNewArray = [200, 400, 100, 600]
 
@@ -67,4 +69,4 @@ function returnSecondValue(getArray){
 }
 
 // console.log(returnSecondValue(myNewArray));
-console.log(returnSecondValue([200, 400, 500, 1000]));
+console.log(returnSecondValue([200, 400, 500, 1000])); //driect pass

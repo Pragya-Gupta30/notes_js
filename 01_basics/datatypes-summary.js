@@ -1,6 +1,8 @@
  //  Primitive (Non-Reference) 
  // call by value hote hain
 
+const { useImperativeHandle } = require("react");
+
 //  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
 
 const score = 100
@@ -36,3 +38,25 @@ const myFunction = function(){
 console.log(anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+//++++++++++++++++++++++++++++++++++++++++++++
+
+//Stack Memory(Primitive Datatypes) copy milta hai
+//Heap Memory(Non-Primitive Datatypes) reference milta hai original value ka
+
+let ytchannel="chai aur code"
+let anotherName =ytchannel
+
+anotherName="mychannel"
+console.log(ytchannel);
+console.log(anotherName); //yaha copy mili thi toh original value mein koi change nhi hua tha
+
+let userOne={
+    email:"pg@google.com",
+    upi:"user@ybl"
+}
+let userTwo=userOne
+
+userTwo.email="user@google.com"
+console.log(userOne);
+console.log(userTwo);

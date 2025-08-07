@@ -1,4 +1,5 @@
-//  Primitive
+ //  Primitive (Non-Reference) 
+ // call by value hote hain
 
 //  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
 
@@ -12,9 +13,9 @@ let userEmail;
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id === anotherId);
+console.log(id === anotherId); //ye false hoga dono ko alaga alag id milegi aur dono same nhi honge
 
-// const bigNumber = 3456543576654356754n
+// const bigNumber = 3456543576654356754n //n se bigInt bana diya hai isko
 
 
 
@@ -22,16 +23,16 @@ console.log(id === anotherId);
 
 // Array, Objects, Functions
 
-const heros = ["shaktiman", "naagraj", "doga"];
+const heros = ["shaktiman", "naagraj", "doga"]; //ye array hai
 let myObj = {
     name: "hitesh",
     age: 22,
-}
+} //ye objects hain curly braces ke andar
 
 const myFunction = function(){
     console.log("Hello world");
 }
 
-console.log(typeof anotherId);
+console.log(anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3

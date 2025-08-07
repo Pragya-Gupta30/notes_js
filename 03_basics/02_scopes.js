@@ -1,17 +1,14 @@
-//var c = 300
+//var c = 300 global scope hai iska...ye block scope nhi samajhta
 let a = 300
 if (true) {
     let a = 10
     const b = 20
-    // console.log("INNER: ", a);
-    
+    console.log("INNER: ", a);   
 }
 
-
-
-// console.log(a);
-// console.log(b);
-// console.log(c);
+//console.log(a);
+console.log(b);
+console.log(c);
 
 
 function one(){

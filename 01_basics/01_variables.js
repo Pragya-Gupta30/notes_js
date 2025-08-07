@@ -2,10 +2,9 @@ const accountId = 144553
 let accountEmail = "hitesh@google.com"
 var accountPassword = "12345"
 accountCity = "Jaipur"
-let accountState;
+let accountState; // declare karke chod diya toh undefined value hai
 
 // accountId = 2 // not allowed
-
 
 accountEmail = "hc@hc.com"
 accountPassword = "21212121"

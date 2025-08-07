@@ -1,8 +1,6 @@
  //  Primitive (Non-Reference) 
  // call by value hote hain
 
-const { useImperativeHandle } = require("react");
-
 //  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
 
 const score = 100

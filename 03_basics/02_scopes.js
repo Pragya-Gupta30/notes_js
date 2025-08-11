@@ -16,7 +16,7 @@ function one(){
 
     function two(){
         const website = "youtube"
-        console.log(username);
+        console.log(username); 
     }
     // console.log(website);
 
@@ -41,7 +41,7 @@ if (true) {
 // ++++++++++++++++++ interesting ++++++++++++++++++
 
 
-console.log(addone(5))
+console.log(addone(5)) //ye wale mein call pahle chal jayega kyuki declaration ka method alag hai
 
 function addone(num){
     return num + 1
@@ -49,7 +49,8 @@ function addone(num){
 
 
 
-addTwo(5)
-const addTwo = function(num){
+addTwo(5) //ye error dega kyuki declaration se pahle call hai
+//expression ki tarah funcions hain
+const addTwo = function(num){ 
     return num + 2
 }

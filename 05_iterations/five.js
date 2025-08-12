@@ -12,8 +12,10 @@ const coding = ["js", "ruby", "java", "python", "cpp"]
 //     console.log(item);
 // }
 
-// coding.forEach(printMe)
+// coding.forEach(printMe) //function pahle hi define karke idhar sirf name diya hai....call ya execute nhi karna hai
 
+
+//ye saare parameters bhi hai iske paas
 // coding.forEach( (item, index, arr)=> {
 //     console.log(item, index, arr);
 // } )

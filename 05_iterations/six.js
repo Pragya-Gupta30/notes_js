@@ -6,13 +6,13 @@
 //     return item
 // } )
 
-// console.log(values);
+// console.log(values); //isne return undefined kiya hai ....mtlb forEach koi value return nhi karta hai
 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // const newNums = myNums.filter( (num) => {
 //     return num > 4
-// } )
+// } )   //return use karna jaruri hai {} iske liye....nhi toh simple bhi likh sakte hain ek line mein
 
 // const newNums = []
 

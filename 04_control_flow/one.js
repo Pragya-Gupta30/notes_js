@@ -18,12 +18,12 @@ const temperature = 41
 //     console.log(`User power: ${power}`);
 // }
 
-// console.log(`User power: ${power}`);
+// console.log(`User power: ${power}`); bahar scope nhi hai power ka
 
 
 // const balance = 1000
 
-// if (balance > 500) console.log("test"),console.log("test2");
+// if (balance > 500) console.log("test"),console.log("test2");  //iss tarah se nhi karna hai readabili ty kam hai iski
 
 // if (balance < 500) {
 //     console.log("less than 500");

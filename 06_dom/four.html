@@ -12,32 +12,36 @@
     </ul>
 </body>
 <script>
+    //Creating a basic li element
     function addLanguage(langName){
         const li = document.createElement('li');
         li.innerHTML = `${langName}`
         document.querySelector('.language').appendChild(li)
-    }
+    } //ye jyada acha method nhi hai kyuki isko access karne ke liye ye baar baar tree ko traverse kar rha hai pura
     addLanguage("python")
     addLanguage("typescript")
 
+//Optimized approach hai ye upar wale function ka
+
     function addOptiLanguage(langName){
         const li = document.createElement('li');
+        //bas idhar createTextNode use kar rhe hain...yaha pe ye pura tree traverse nhi karega aur nodes create karke end mein laga dega simply
         li.appendChild(document.createTextNode(langName))
         document.querySelector('.language').appendChild(li)
     }
     addOptiLanguage('golang')
 
     //Edit
-    const secondLang = document.querySelector("li:nth-child(2)")
+    const secondLang = document.querySelector("li:nth-child(2)") //child select kar rhe hai
     console.log(secondLang);
-    //secondLang.innerHTML = "Mojo"
+    //secondLang.innerHTML = "Mojo" //ye chal jayega lekin kam optimized hai
     const newli = document.createElement('li')
     newli.textContent = "Mojo"
     secondLang.replaceWith(newli)
 
     //edit
     const firstLang = document.querySelector("li:first-child")
-    firstLang.outerHTML = '<li>TypeScript</li>'
+    firstLang.outerHTML = '<li>TypeScript</li>' //another method to edit
 
     //remove
     const lastLang = document.querySelector('li:last-child')

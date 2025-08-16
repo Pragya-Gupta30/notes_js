@@ -1,4 +1,4 @@
-const promiseOne = new Promise(function(resolve, reject){
+ const promiseOne = new Promise(function(resolve, reject){
     //Do an async task
     // DB calls, cryptography, network
     setTimeout(function(){
@@ -11,6 +11,7 @@ promiseOne.then(function(){
     console.log("Promise consumed");
 })
 
+//bina variable ke direct kiya hai bas
 new Promise(function(resolve, reject){
     setTimeout(function(){
         console.log("Async task 2");
@@ -27,7 +28,7 @@ const promiseThree = new Promise(function(resolve, reject){
     }, 1000)
 })
 
-promiseThree.then(function(user){
+promiseThree.then(function(user){  //resolve ka object return kar rha hai
     console.log(user);
 })
 

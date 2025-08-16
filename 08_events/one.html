@@ -19,10 +19,16 @@
    </div>
 </body>
 <script>
-    // document.getElementById('owl').onclick = function(){
-    //     alert("owl clicked")
-    // }
+    document.getElementById('owl').onclick = function(){
+        alert("owl clicked")
+    }
+    //onclick kam functionalities deta hai
+    //event listener jyada deta hai
 
+    document.getElementById('owl').addEventListener('click',function(){
+        alert("owl clicked again")
+    },false)
+    // false third parameter hai idhar bydefault false hi hota 
      // attachEvent()
     // jQuery - on
 
@@ -35,16 +41,16 @@
     //     console.log("clicked inside the ul");
     // }, false)
 
-    // document.getElementById('owl').addEventListener('click', function(e){
-    //     console.log("owl clicked");
-    //     e.stopPropagation()
-    // }, false)
+    document.getElementById('owl').addEventListener('click', function(e){
+        console.log("owl clicked");
+        e.stopPropagation()
+    }, false)
     
-    // document.getElementById('google').addEventListener('click',function(e){
-    //     e.preventDefault();
-    //     e.stopPropagation()
-    //     console.log("google clicked");
-    // }, false)
+    document.getElementById('google').addEventListener('click',function(e){
+        e.preventDefault();
+        e.stopPropagation()
+        console.log("google clicked");
+    }, false)
    
     
     document.querySelector('#images').addEventListener('click', function(e){

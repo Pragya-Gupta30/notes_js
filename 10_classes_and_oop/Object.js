@@ -7,13 +7,13 @@ multipleBy5.power = 2
 
 console.log(multipleBy5(5));
 console.log(multipleBy5.power);
-console.log(multipleBy5.prototype);
+console.log(multipleBy5.prototype); //{}
 
 function createUser(username, score){
     this.username = username
     this.score = score
 }
-
+//function ke anadar functionalities aur properties add kar rhe hain khud ki...prototype use karke 
 createUser.prototype.increment = function(){
     this.score++
 }

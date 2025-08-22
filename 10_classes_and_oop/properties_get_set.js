@@ -1,3 +1,5 @@
+//pahle ka syntax hai yeh
+//idhar function banake kiya hai
 function User(email, password){
     this._email = email;
     this._password = password

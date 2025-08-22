@@ -1,4 +1,4 @@
-class User {
+ class User {
     constructor(username){
         this.username = username
     }
@@ -13,7 +13,7 @@ class User {
 }
 
 const hitesh = new User("hitesh")
-// console.log(hitesh.createId())
+// console.log(hitesh.createId())  bina static ke isko access hoga ye function 
 
 class Teacher extends User {
     constructor(username, email){
@@ -23,4 +23,4 @@ class Teacher extends User {
 }
 
 const iphone = new Teacher("iphone", "i@phone.com")
-console.log(iphone.createId());
+console.log(iphone.createId()); // ye hoga nhi kyuki static hai createId function
